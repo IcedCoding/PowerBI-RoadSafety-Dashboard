@@ -1,86 +1,65 @@
-# 🚦 Road Safety Dashboard (2007–2018)
+# Power BI Road Safety Dashboard (2007–2018)
 
-A Power BI dashboard created for the **U.S. National Highway Traffic Safety Administration (NHTSA)** to visualize road safety improvements across U.S. states over the period **2007 to 2018**.
-
-## 📊 Objective
-
-This dashboard highlights how each state is performing in terms of **road fatalities per 100,000,000 miles driven**, compared to the NHTSA’s safety target of **1.02 fatalities**. It provides interactive visual analysis by year and state.
+This Power BI report was created as part of a practice activity for the US National Highway Traffic Safety Administration (NHTSA). The goal is to visualize improvements in road safety over the time period from 2007 to 2018 by state, aiming to meet the target of **1.02 fatalities per 100 million miles driven**.
 
 ---
 
-## 📁 Data Source
+## 🚗 **Dashboard Overview**
 
-- **Workbook**: `PowerBIData`
-- **Sheet**: `PA - Driving Safety`
-- **Data Includes**:
-  - State
-  - Year
-  - Miles Traveled
-  - Actual Fatalities
-  - Fatalities per 100M Miles
-  - Fatality Target (1.02)
-  - Actual 2018 Fatality Rate
+The dashboard displays key metrics related to road safety across the United States, allowing users to explore data by state and track progress toward the target fatality rate of **1.02**.
 
----
-
-## 📈 Dashboard Features
-
-### **Main Page (Interactive Overview)**
-- **State Slicer**: Single select dropdown to choose a state
-- **Selected State Card**: Displays the selected state
-- **Gauge**: 
-  - Visualizes 2018 fatality rate for selected state
-  - Ranges from `0` to `2.5`
-  - Target set to `1.02`
-  - **Conditional colors**:
-    - Blue ≤ 0.8 (Good)
-    - Yellow = 1.02 (Target)
-    - Red ≥ 2.5 (Poor)
-- **Map**:
-  - Highlights the selected state
-  - Filled with the same color as the gauge
-- **KPI Visual**:
-  - Indicator: Fatalities
-  - Trend Axis: Year
-  - Target Goal: Avg. Target Fatalities
-  - Settings: `Decreasing is positive`, `Low is good`
-- **Cards**:
-  - Total Miles Driven
-  - Number of Fatalities
+- **Slicer**: Select a state to filter the data
+- **Card**: Displays the selected state
+- **Gauge**: Shows the fatality rate for 2018, with conditional color formatting:
+  - **Blue**: 0.8 (Good)
+  - **Yellow**: 1.02 (Target)
+  - **Red**: 2.5 (High)
+- **Map**: Highlights the selected state, colored based on the 2018 fatality rate
+- **KPI**: Displays a trend of fatalities over time
+- **Additional charts**:
+  - Bar chart showing fatalities over time
+  - Bar chart showing miles driven
+  - Line and clustered column chart for the fatality rate comparison against the 1.02 target
 
 ---
 
-## 📊 Additional Pages (Detailed Analysis)
+## 📊 **Live Dashboard Link**
 
-### **Page 1: Fatalities Over Time**
-- **Bar Chart**: Shows fatalities year-over-year
-- **Conditional Formatting**: Color varies based on values
-- **Drillthrough Enabled** (by State)
+You can interact with the live dashboard using the link below:
 
-### **Page 2: Miles Driven Over Time**
-- **Bar Chart**: Visualizes total miles traveled each year
-- **Drillthrough Enabled**
-
-### **Page 3: Fatality Rate vs Target**
-- **Combo Chart**: 
-  - Bars: Actual fatality rate per year
-  - Line: Constant value (1.02 target)
-- **Target Line Column**: `Target1.02 = 1.02`
-- **Drillthrough Enabled**
-
-🔁 **Back Button Included** on drillthrough pages
+🔗 [View Power BI Report - Road Safety Dashboard (2007-2018)](https://app.powerbi.com/view?r=eyJrIjoiZTAzZmVlMGItMjE1ZS00MTNmLWIyNzgtMGZhNjVkNmU3YjdlIiwidCI6ImZkMGY2OGYxLTliOTItNDNhZS04MGQxLTUzNGE4OTAxZTM0MSIsImMiOjZ9)
 
 ---
 
-## 🛠 Tools & Skills Used
+## 🛠️ **Key Features**
+- Slicer to select a state
+- Gauge for 2018 fatalities rate
+- Map visual with color coding based on the fatality rate
+- KPI to track progress against the target
+- Drillthrough charts for detailed views of fatalities and miles driven
 
-- Power BI Desktop
-- Power Query Editor
-- DAX Calculated Columns (e.g., `Target1.02`)
-- KPI & Gauge Visuals
-- Conditional Formatting
-- Drillthrough Navigation
-- Map & Geographic Visuals
+---
+
+## 📈 **Visuals and Insights**
+- Fatality rate visualization over time by state
+- Comparison of miles driven across the US
+- Drillthrough charts that allow you to deep dive into specific data points
+
+---
+
+## 🗂️ **Dataset Information**
+
+The dataset used for this report is from the **"PA - Driving Safety"** spreadsheet found in the workbook **PowerBIData.xlsx**. It contains:
+- State, year, miles traveled, and actual fatalities
+- The actual fatalities per 100 million miles
+- The target level of fatalities for comparison
+
+---
+
+
+### 💬 **Contact**
+For more details or to discuss the project, feel free to reach out.
+
 
 ---
 
